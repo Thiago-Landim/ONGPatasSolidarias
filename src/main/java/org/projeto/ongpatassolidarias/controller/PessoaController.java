@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/Pessoa")
 public class PessoaController {
 
     @Autowired
@@ -22,7 +23,7 @@ public class PessoaController {
         return new ResponseEntity<>(pessoa, HttpStatus.OK);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("Pessoa/{id}")
     public ResponseEntity<Optional<Pessoa>> idPessoa(@PathVariable Long id) {
         Optional<Pessoa> pessoa = pessoaService.buscarIdPessoa(id);
         return ResponseEntity.ok(pessoa);

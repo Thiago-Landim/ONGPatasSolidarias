@@ -10,6 +10,7 @@ public class Pessoa {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Pessoa_id")
     private Long id;
 
     @Column(name = "Nome")

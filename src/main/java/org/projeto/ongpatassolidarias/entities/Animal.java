@@ -11,6 +11,7 @@ public class Animal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "Animal_id")
     private Long id;
 
     @Column(name = "Nome")
@@ -27,6 +28,8 @@ public class Animal {
 
     @Column(name = "Adotado")
     private boolean adotado;
+
+
 
 
 }

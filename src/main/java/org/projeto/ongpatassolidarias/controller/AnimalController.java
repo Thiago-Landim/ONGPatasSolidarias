@@ -16,7 +16,7 @@ public class AnimalController {
     @Autowired
     AnimalService animalService;
 
-    @GetMapping("/listaadocao")
+    @GetMapping("/listaAnimais")
     public ResponseEntity<List<Animal>> listarTodosAnimais() {
         List<Animal> listaAnimais = animalService.listarAnimais();
         // Quando tiver tempo implementar a logica para verificar se tem algo na lista
