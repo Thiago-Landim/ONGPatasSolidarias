@@ -39,7 +39,7 @@ public class AnimalController {
 
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping("/delete/{id}")
     public void deletarAnimal(Long id){
         animalService.deletarAnimal(id);
     }
